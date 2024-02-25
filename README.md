@@ -4,4 +4,4 @@ Here we continue the tutorial explaining all about how we can better organize ou
 
 We explain the following:
 
-* 
+* Creating separate class that defines the structure of a particular widget
