@@ -1,7 +1,7 @@
 // Imports all material UI widgets
 import "package:flutter/material.dart";
 // Importing the first_screen widget in the main file
-import './widgets/FirstScreen.dart';
+import './widgets/HomeWidget.dart';
 
 // Declare the entry point of the app
 // Purpose is to create and attach all widgets to the screen
@@ -14,8 +14,7 @@ class FlutterApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
-        title: "Flutter App",
-        home: Scaffold(
-            appBar: AppBar(title: Text("Ben's App")), body: FirstScreen()));
+        title: "Exploring UI Widgets",
+        home: HomeWidget());
   }
 }

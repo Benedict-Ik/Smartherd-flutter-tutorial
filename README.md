@@ -1,12 +1,17 @@
 # Organizing your code branch
 
-Here we continue the tutorial explaining all about how we can better organize our code
+Here we continue the tutorial by introducing basic widgets
 
-We explain the following:
+We explain the following widgets:
 
-* Creating separate class that defines the structure of a particular widget
-* Differences between stateless and stateful widgets
-* Removing the **debug** banner
-* Use of **function expression** in main method
-* Create a separate package (embedded in lib) to house all child widgets
-* 
+* Row and Column
+* Text
+* Scafford and AppBar
+* Raised Button vs Elevated Button
+* Alert Dialog
+* Box Constraints
+* Container
+* Image
+* Size, Margin, and Padding
+* ListView
+* Floating Action Button (FAB)
