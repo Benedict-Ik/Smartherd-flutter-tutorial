@@ -3,9 +3,7 @@ import "package:flutter/material.dart";
 
 // Declare the entry point of the app
 // Purpose is to create and attach all widgets to the screen
-void main() {
-  runApp(FlutterApp());
-}
+void main() => runApp(FlutterApp());
 
 class FlutterApp extends StatelessWidget {
   const FlutterApp({super.key});
@@ -13,6 +11,7 @@ class FlutterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: "Flutter App",
       home: Scaffold(
           appBar: AppBar(title: Text("Ben")),
