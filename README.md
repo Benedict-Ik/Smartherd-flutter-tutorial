@@ -1,21 +1,14 @@
-# Widgets branch
+# Image-assets branch
 
-Here we continue the tutorial by introducing basic widgets
+This tutorial aims to explain how you can successfully add image assets to your project
 
-We explain the following widgets:
+We explain the following:
 
-* Row and Column
-* Expanded widget
-* Home
-* Center
-* Text
-* Width and Height
-* Scafford and AppBar
-* Raised Button vs Elevated Button
-* Alert Dialog
-* Box Constraints
-* Container
-* Image
-* Size, Margin, and Padding
-* ListView
-* Floating Action Button (FAB)
+* How to use Images in your app
+* How to load image from Assets
+> - Assets are the resources that you add locally in your app
+* 
+* 
+* 
+* 
+* 
