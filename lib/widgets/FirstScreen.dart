@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget {
       color: Colors.white,
       child: Center(
         child: Text(
-          "This is the oyc branch !!!!",
+          "This is the widgets branch!!!",
           textDirection: TextDirection.ltr,
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20, color: Colors.red),

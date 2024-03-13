@@ -34,32 +34,71 @@ class RowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
+            padding: EdgeInsets.only(left: 10.0, top: 20.0),
             alignment: Alignment.center,
             // width: 40.0,
             // height: 100.0,
             color: Colors.purple,
-            child: Row(
+            child: Column(
               children: [
-                Padding(padding: EdgeInsets.only(left: 10.0)),
-                // Widget 1
-                Text(
-                  "First widget",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 10.0,
-                      decoration: TextDecoration.none),
-                  softWrap: true,
-                ),
-                Padding(padding: EdgeInsets.only(left: 10.0)),
+                // First Row
+                Row(
+                  children: [
+                    Padding(padding: EdgeInsets.only(left: 10.0)),
+                    // Widget 1
+                    Expanded(
+                        child: Text(
+                      "Spice Jet",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35.0,
+                          fontFamily: "Raleway",
+                          decoration: TextDecoration.none),
+                      softWrap: true,
+                    )),
+                    Padding(padding: EdgeInsets.only(left: 10.0)),
 
-                // Widget 2
-                Text(
-                  "Second widget",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 10.0,
-                      decoration: TextDecoration.none),
+                    // Widget 2
+                    Expanded(
+                        child: Text(
+                      "From Lagos to Kampala via First Airplanes",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35.0,
+                          fontFamily: "Raleway",
+                          decoration: TextDecoration.none),
+                    )),
+                  ],
                 ),
+                // Second Row
+                Row(
+                  children: [
+                    Padding(padding: EdgeInsets.only(left: 10.0)),
+                    // Widget 1
+                    Expanded(
+                        child: Text(
+                      "Spice Jet",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35.0,
+                          fontFamily: "Raleway",
+                          decoration: TextDecoration.none),
+                      softWrap: true,
+                    )),
+                    Padding(padding: EdgeInsets.only(left: 10.0)),
+
+                    // Widget 2
+                    Expanded(
+                        child: Text(
+                      "From Lagos to Kampala via First Airplanes",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35.0,
+                          fontFamily: "Raleway",
+                          decoration: TextDecoration.none),
+                    )),
+                  ],
+                )
               ],
             )));
   }
