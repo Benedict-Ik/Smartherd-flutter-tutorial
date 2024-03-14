@@ -99,7 +99,8 @@ class RowWidget extends StatelessWidget {
                     )),
                   ],
                 ),
-                ImageAssets()
+                ImageAssets(),
+                AssetButton()
               ],
             )));
   }
@@ -116,5 +117,41 @@ class ImageAssets extends StatelessWidget {
       padding: EdgeInsets.only(top: 30.0),
       child: image,
     );
+  }
+}
+
+class AssetButton extends StatelessWidget {
+  const AssetButton({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: EdgeInsets.only(top: 30.0),
+      height: 50.0,
+      width: 200.0,
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.deepOrange, elevation: 6.0),
+        child: Text(
+          "Book your flight",
+          style: TextStyle(
+              fontSize: 20.0, color: const Color.fromARGB(255, 241, 231, 231)),
+        ),
+        onPressed: () {
+          bookFlight(context);
+        },
+      ),
+    );
+  }
+
+  void bookFlight(BuildContext context) {
+    // Define Dialog
+    var alertDialog = AlertDialog(
+      title: Text("Flight booked successfully"),
+      content: Text("Have a pleasant flight"),
+    );
+    // Show Dialog
+    showDialog(
+        context: context, builder: (BuildContext context) => alertDialog);
   }
 }

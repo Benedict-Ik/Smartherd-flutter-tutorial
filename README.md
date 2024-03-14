@@ -1,9 +1,8 @@
-# Image-assets branch
+# Buttons-and-Alert branch
 
-This tutorial aims to explain how you can successfully add image assets to your project
+This tutorial aims to explain how you can successfully use buttons and alerts in your project
 
 We explain the following:
 
-* How to use Images in your app
-* How to load image from Assets
-> - Assets are the resources that you add locally in your app
+* How to use Elevated button
+* How to use alert dialog
