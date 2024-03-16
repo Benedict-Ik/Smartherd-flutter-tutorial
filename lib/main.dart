@@ -1,5 +1,6 @@
 // Imports all material UI widgets
 import "package:flutter/material.dart";
+import 'package:namer_app/widgets/ListView.dart';
 // Importing the first_screen widget in the main file
 import './widgets/HomeWidget.dart';
 
@@ -17,7 +18,12 @@ class FlutterApp extends StatelessWidget {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: "Exploring UI Widgets",
-        // home: TextWidget1());
-        home: RowWidget());
+        // home: RowWidget());
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text("List view"),
+              backgroundColor: Color.fromARGB(255, 0, 62, 179),
+            ),
+            body: getListView()));
   }
 }
