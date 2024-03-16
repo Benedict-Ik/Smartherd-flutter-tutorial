@@ -2,7 +2,6 @@
 import "package:flutter/material.dart";
 import 'package:namer_app/widgets/ListView.dart';
 // Importing the first_screen widget in the main file
-import './widgets/HomeWidget.dart';
 
 // Paused in tutorial 2.4
 

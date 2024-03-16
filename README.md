@@ -1,4 +1,4 @@
-# Buttons-and-Alert branch
+# ListView branch
 
 This tutorial aims to explain how you can successfully use the ListView widget in your project
 
