@@ -1,7 +1,8 @@
 // Imports all material UI widgets
+import 'dart:js';
 import "package:flutter/material.dart";
 import 'package:namer_app/widgets/ListView.dart';
-// Importing the first_screen widget in the main file
+import 'package:namer_app/widgets/LongList.dart';
 import './widgets/HomeWidget.dart';
 
 // Paused in tutorial 2.4
@@ -21,9 +22,9 @@ class FlutterApp extends StatelessWidget {
         // home: RowWidget());
         home: Scaffold(
             appBar: AppBar(
-              title: Text("List view"),
+              title: Text("Long List view"),
               backgroundColor: Color.fromARGB(255, 0, 62, 179),
             ),
-            body: getListView()));
+            body: getLongListView()));
   }
 }
