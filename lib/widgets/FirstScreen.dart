@@ -9,7 +9,7 @@ class FirstScreen extends StatelessWidget {
       color: Colors.white,
       child: Center(
         child: Text(
-          "This is the Long List branch!!!",
+          "This is the FAB and Snack bar branch!!!",
           textDirection: TextDirection.ltr,
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20, color: Colors.red),

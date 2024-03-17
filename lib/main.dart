@@ -1,8 +1,7 @@
 // Imports all material UI widgets
-import 'dart:js';
 import "package:flutter/material.dart";
-import 'package:namer_app/widgets/ListView.dart';
-import 'package:namer_app/widgets/LongList.dart';
+import 'package:ben_app/widgets/ListView.dart';
+import 'package:ben_app/widgets/LongList.dart';
 import './widgets/HomeWidget.dart';
 
 // Paused in tutorial 2.4
@@ -21,10 +20,18 @@ class FlutterApp extends StatelessWidget {
         title: "Exploring UI Widgets",
         // home: RowWidget());
         home: Scaffold(
-            appBar: AppBar(
-              title: Text("Long List view"),
-              backgroundColor: Color.fromARGB(255, 0, 62, 179),
-            ),
-            body: getLongListView()));
+          appBar: AppBar(
+            title: Text("Long List view"),
+            backgroundColor: Color.fromARGB(255, 0, 62, 179),
+          ),
+          body: getLongListView(),
+          floatingActionButton: FloatingActionButton(
+            onPressed: () {
+              debugPrint("Floating Action Button clicked");
+            },
+            child: Icon(Icons.add),
+            tooltip: "Add a new item",
+          ),
+        ));
   }
 }

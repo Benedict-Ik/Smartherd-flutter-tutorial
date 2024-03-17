@@ -1,5 +1,6 @@
 // Imports all material UI widgets
 import "package:flutter/material.dart";
+import 'package:ben_app/widgets/Snackbar.dart';
 
 // Preparing data source for long list
 List<String> getListElements() {
@@ -21,7 +22,7 @@ Widget getLongListView() {
     return ListTile(
       leading: Icon(Icons.person),
       title: Text(listItems[index]),
-      onTap: () => debugPrint("${listItems[index]} was tapped"),
+      onTap: () => showSnackBar(context, listItems[index]),
     );
   });
   return listView;
